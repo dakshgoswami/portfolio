@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  font-family: "General Sans Regular";
+}
+
+.following-circle{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 999;
+  position: absolute;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+
+.main {
+  width: 100%;
+  background-color: #000;
+}
+
+.head {
+  width: 100%;
+  height: 100vh;
+}
+
+/* .head .nav{
+    width: 100%;
+    height: 7vh;
+    padding: 1.5em;
+    background-color: bisque;
+} */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 7vh;
+  padding: 2.5em;
+  /* background-color: aqua; */
+  /* padding: .5em 2em; */
+}
+
+.nav a {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav #logo {
+  text-transform: capitalize;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.heading {
+  width: 100%;
+  font-size: 8.5vh;
+  /* background-color: beige; */
+  text-transform: uppercase;
+  margin-top: 1em;
+  font-family: "General Sans Regular";
+  font-weight: 500;
+}
+
+.heading h1 {
+  font-size: 2.6em;
+  padding-left: 0.3em;
+  color: #ffffffa9;
+}
+
+.heading .heading-second {
+  margin-top: -1.3em;
+  margin-left: 2.7em;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.heading-second h5 {
+  font-size: 0.25em;
+  text-align: right;
+  color: #fff;
+  font-family: "General Sans Medium";
+  font-weight: 500;
+}
+
+.right-wight-content {
+  background-color: #fff;
+  width: 3.5vw;
+  height: 24vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  padding: 0.1em;
+  margin-top: -4em;
+}
+
+.right-wight-content h3 {
+  font-size: 0.35em;
+  font-weight: 900;
+  font-family: "General Sans Medium";
+}
+
+.right-wight-content h5 {
+  transform: rotate(270deg);
+  text-transform: capitalize;
+  font-size: 0.22em;
+  font-weight: 900;
+  margin-bottom: 2em;
+  font-family: "General Sans Medium";
+}
+
+.right-content {
+  /* background-color: bisque; */
+  text-transform: uppercase;
+  width: fit-content;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  margin: 15vh 2.5vw;
+  text-align: right;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.right-content #second-heading {
+  margin-top: 0.5em;
+}
+
+.head-footer {
+  width: 100%;
+  /* background-color: bisque; */
+  color: #fff;
+  padding: 0 2.5em;
+  margin-top: 23vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.head-footer h5 {
+  font-family: "General Sans Medium";
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.head-footer i {
+  color: #fff;
+  margin-left: 0.3em;
+  font-size: 1.2em;
+}
+
+.head-footer .down-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.down-arrows .arrow {
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+  background-color: #ffffffa0;
+}
+
+.down-arrows .arrow i {
+  font-size: 1em;
+  padding: 0.3em 0.35em 0 0;
+  color: #000;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-heading2 {
+  margin-right: 10em;
+}
+
+.middle {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  color: #fff;
+  display: block;
+  padding: 0 2vw;
+  padding-top: 22vh;
+  padding-right: 10vw;
+}
+
+.header {
+  width: 100%;
+  height: 15vh;
+  /* background-color: bisque; */
+  margin-top: 2vw;
+  border-top: 1px solid gray;
+  padding: 8vw 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffffa9;
+}
+
+.header:last-child {
+  border-bottom: 1px solid gray;
+}
+
+.header h1 {
+  font-size: 7vw;
+}
+
+.header h5 {
+  font-size: 1vw;
+  font-weight: 500;
+  color: #fff;
+}
+
+.content1 img {
+  /* background-image: url(./hoverImages/plug.png); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 32vw;
+  height: 45vh;
+  display: none;
+}
+
+.content2 img {
+  /* background-image: url(./hoverImages/ixperience.png); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 32vw;
+  height: 45vh;
+  display: none;
+}
+
+.content3 img {
+  /* background-image: url(./hoverImages/hudu.png); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 32vw;
+  height: 45vh;
+  display: none;
+}
+
+.creatorinfo {
+  background-color: #000;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20vw 10vw 10vw;
+  gap: 5vw;
+  padding-left: 40vw;
+}
+
+.creatorinfo .img img {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+}
+
+.information {
+  color: #fff;
+  width: 30vw;
+}
+
+.information h4 {
+  color: #ffffffa9;
+  font-size: 0.9vw;
+}
+
+.information p {
+  font-size: 1.2vw;
+  margin-bottom: 1.5vw;
+}
+
+.information a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 0.3vw 1.2vw;
+}
+
+.subscribe {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 40px 10px;
+  text-transform: uppercase;
+  margin-bottom: 150px;
+}
+
+.subscribe h5 {
+  opacity: 0.6;
+  font-size: 0.9vw;
+  font-weight: 300;
+  margin-bottom: 0.5vw;
+}
+
+.subscribe h3 {
+  font-size: 1vw;
+}
+
+.footer {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.left-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  font-size: 0.9vw;
+}
+
+.right-footer {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.right-footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.9vw;
+}
+
+.animation-hide{
+  width: fit-content;
+  overflow: hidden;
+}
+
+.animation{
+  transform: translateY(100%);
+}
